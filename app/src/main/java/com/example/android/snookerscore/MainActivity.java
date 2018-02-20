@@ -11,10 +11,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int player = 1;
-    int player1Score = 0;
-    int player2Score = 0;
-    boolean onFoulMode = false;
+    private int player = 1;
+    private int player1Score = 0;
+    private int player2Score = 0;
+    private boolean onFoulMode = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -157,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
             onFoulMode = false;
         }
     }
-
 
     public void resetScore() {
         setPlayer1();
